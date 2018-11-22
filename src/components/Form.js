@@ -22,7 +22,7 @@ class Form extends Component {
 
 export default connect(
   state => ({
-    name: state.formReducer.name,
+    name: state.form.name,
   }),
   dispatch => ({
     actions: bindActionCreators({ handleChangeName }, dispatch)
